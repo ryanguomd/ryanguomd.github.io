@@ -1,0 +1,22 @@
+body{
+    background-color: #f9f9f9;
+}
+
+h1{
+    color: #333333;
+    font-family: "Inter", "Montserrat";
+}
+
+p{
+    color: #0e1111;
+    font-family: "Inter", "Montserrat";
+}
+
+.centered-image{
+    text-align:center;
+}
+
+/*
+Using id="name" for a tag in HTML: #name{ properties } in css will target a specific tag
+Using class="name" for a tag in HTML: .name{ properties } in css will target groups under that "class"
+*/
