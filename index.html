@@ -1,67 +1,183 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-    <title style="background-color: purple;">Ryan Guo's Website</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Website for Ryan Guo">
-    <meta name="keywords" content="Ryan Guo">
-    <meta name="author" content="Ryan Guo">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="60">
+    <!-- <title style="background-color: purple;">Ryan Guo's Website</title> -->
+    <meta charset="UTF-8" />
+    <title>Ryan Yang Guo</title>
+    <meta name="description" content="Website for Ryan Yang Guo" />
+    <meta name="keywords" content="Ryan Guo"> <!-- Added from original -->
+    <meta name="author" content="Ryan Guo"> <!-- Added from original -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="60"> -->
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Font Awesome for Icons -->
     <script src="https://kit.fontawesome.com/4db3fc15cd.js" crossorigin="anonymous"></script>
+
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 
-<body style="background-color: #f9f9f9;">
-    <!-- <hr> adds a horizonal line and <br> is a line break-->
-    <h1 align="center">Ryan Guo</h1><hr><br>
+<body>
+    <!-- ======== NAVIGATION ======== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">Ryan Yang Guo</div>
+        <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="toggle-dark-mode" id="darkModeToggle">
+        <i class="fa-solid fa-moon"></i>
+        </button>
+    </nav>
 
-    <!-- Can make the image a hyperlink using the <a> -->
-    <div class="centered-image">
-        <img src="/Images/Ryan Guo Photo.jpg" height = 300 alt="This is a photo of me" title="Photo of Ryan"><br>
-    </div>
+    <!-- ======== HERO SECTION ======== -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+        <h1>Welcome to <span>My Website</span></h1>
+        <p>Learn more about me by scrolling</p>
+        <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </section>
 
-    <!--<p></p> = normal
-        <b></b> = bold
-        <i></i> = italic
-        <big></big> & <small></small>
-        <sub></sub> & <super></super> = subscript & superscript
-        <ins></ins> = underlined text
-        <del></del> = strikethrough text
-        <mark></mark> = highlighted-->
-    <p align="center"> 
-        Hello, I'm Ryan! I'm a current Math & Computer Science major at Williams College. I'm interested in Tech, Finance, 
-        Business Management, and Software.
-    </p>
+    <!-- ======== ABOUT SECTION ======== -->
+    <section class="about" id="about">
 
-    <i class="fa-solid fa-file"></i>
-    <a href = "/Images/Resume - Ryan Guo April 2024.2 copy.pdf" target="_blank">
-        Resume
-    </a><br>
+        <div class="centered-image">
+            <img src="/Images/Personal_Headshot.jpg" height = 300 
+            title="Photo of Ryan"><br>
+        </div>
 
-    <i class="fa-brands fa-github"></i>
-    <a href = "https://github.com/ryanguomd" target=_blank title="Takes you to my Github">
-        Github
-    </a><br>
+        <h2>About Me</h2>
+        <div class="about-content">
+        <p>
+            Hello! I'm <strong>Ryan Guo</strong>, a third-year computer science & math 
+            major at Williams College. I'm passionate about product & project management, 
+            artificial intelligence, and business.
+        </p>
+        <p>
+            When I'm not busy, you might find me reviewing new restaurants or reading
+            philosophy literature. Feel free to learn more about my interests or 
+            contact me.
+        </p>
+        </div>
+    </section>
 
-    <i class="fa-brands fa-linkedin"></i>
-    <a href = "https://www.linkedin.com/in/ryan-guo-70b355250/" target=_blank>
-        LinkedIn
-    </a><br>
+    <!-- ======== PROJECTS SECTION ======== -->
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <img src="https://via.placeholder.com/400x250.png" alt="Project 1" />
+            <div class="project-text">
+            <h3>AI Chatbot</h3>
+            <p>
+                A sophisticated chatbot designed to interact with and interpret JSON 
+                configuration files using a Conversational Retrieval Chain powered by 
+                OpenAI's GPT-3.5-Turbo model. 
+            </p>
+            <a href="#" class="btn-outline">View Details</a>
+            </div>
+        </div>
 
-    <i class="fa-solid fa-envelope"></i>
-    <a href="mailto:ryanguomd@gmail.com" target=_self>
-        Contact Me Through Email
-    </a><br>
-    <!-- In the terminal at directory ryanguomd@github.io
-    git add --all
-    git commit -m "blah blah"
-    git push -u origin main -->
+        <!-- Project 2 -->
+        <div class="project-card">
+            <img src="https://via.placeholder.com/400x250.png" alt="Project 2" />
+            <div class="project-text">
+            <h3>Project Two</h3>
+            <p>
+                A full-stack web application featuring a REST API, database integration,
+                and responsive design.
+            </p>
+            <a href="#" class="btn-outline">View Details</a>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <img src="https://via.placeholder.com/400x250.png" alt="Project 3" />
+            <div class="project-text">
+            <h3>Project Three</h3>
+            <p>
+                An interactive data visualization project using advanced JavaScript
+                libraries and custom APIs.
+            </p>
+            <a href="#" class="btn-outline">View Details</a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ======== CONTACT SECTION ======== -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>
+        Interested in working together or have a question? Let's connect!
+        </p>
+        <div class="contact-links">
+        <a href="mailto:jane.doe@example.com" class="contact-link">
+            <i class="fa-solid fa-envelope"></i>
+            Email
+        </a>
+        <a href="https://github.com/your-github" target="_blank" class="contact-link">
+            <i class="fa-brands fa-github"></i>
+            GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" class="contact-link">
+            <i class="fa-brands fa-linkedin"></i>
+            LinkedIn
+        </a>
+        </div>
+    </section>
+
+    <!-- ======== SCROLL TO TOP BUTTON ======== -->
+    <button id="scrollToTopBtn" class="scroll-to-top-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- ======== FOOTER ======== -->
+    <footer>
+        <p>&copy; 2025 Ryan Yang Guo. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
 </body>
-
 </html>
+
+<!-- 
+Tip 1: <hr> adds a horizonal line and <br> is a line break
+Tip 2: Helpful things for customizing text
+    <p></p> = normal
+    <b></b> = bold
+    <i></i> = italic
+    <big></big> & <small></small>
+    <sub></sub> & <super></super> = subscript & superscript
+    <ins></ins> = underlined text
+    <del></del> = strikethrough text
+    <mark></mark> = highlighted
+Tip 3: Can make an image a hyperlink using the <a>
+
+Things I may want to add:
+<h1 align="center">Ryan Guo</h1><hr><br>
+
+<div class="centered-image">
+    <img src="/Images/Ryan Guo Photo.jpg" height = 300 
+    alt="This is a photo of me" 
+    title="Photo of Ryan"><br>
+</div>
+
+<i class="fa-solid fa-file"></i>
+<a href = "/Images/Resume - Ryan Guo February 2024.pdf" target="_blank">
+    Resume
+</a><br> 
+
+-->
